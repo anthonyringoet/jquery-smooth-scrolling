@@ -20,8 +20,11 @@
 	    	}
 	    }());
 
-	$.fn.smoothScroll = function(speed) {
-		speed = ~~speed || 400;
+	$.fn.smoothScroll = function(config) {
+		var options = $.extend({
+			speed: 400,
+			offset: 0
+		}, config);
 		// Look for links to anchors (on any page)
 		return this.find('a[href*="#"]').click(function(event) {
 			var hash = this.hash,
@@ -32,9 +35,14 @@
 				if ($hash.length) {
 					// …don’t jump to the link right away…
 					event.preventDefault();
+					// add optional offset for fixed header fe
+					var headerOffset = $hash.offset().top - options.offset;
 					// …and smoothly scroll to it
-					$scrollElement.stop().animate({ 'scrollTop': $hash.offset().top }, speed, function() {
+					$scrollElement.stop().animate({ 'scrollTop': headerOffset }, options.speed, function() {
 						location.hash = hash;
+						// because of the hashchange the page scrolls below our offset
+						// kind of dirty but just set it back because we want to use the offset
+						$scrollElement.scrollTop(headerOffset);
 					});
 				}
 			}
