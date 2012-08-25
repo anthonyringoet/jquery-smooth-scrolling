@@ -22,10 +22,14 @@ Find all links to anchors in the same document inside `#content`, and make them 
 $('#content').smoothScroll();
 ```
 
-### Specifying animation speed
+### Specifying options
+Possible options are animation speed and offset for fixed position headers. These settings default to the settings as seen below.
 
 ```js
-$('html').smoothScroll(300);
+$('html').smoothScroll({
+	speed: 400,
+	offset: 0
+});
 ```
 
 _– [Mathias](http://mathiasbynens.be/)_
