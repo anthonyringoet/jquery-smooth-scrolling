@@ -1,9 +1,5 @@
 # Smooth Scrolling jQuery Plugin
 
-## Demo & Examples
-
-[http://mathiasbynens.be/demo/smooth-scrolling](http://mathiasbynens.be/demo/smooth-scrolling)
-
 ## Example Usage
 
 ### Simple – Inside entire document
@@ -32,4 +28,4 @@ $('html').smoothScroll({
 });
 ```
 
-_– [Mathias](http://mathiasbynens.be/)_
+original plugin by _–[Mathias](http://mathiasbynens.be/)_
