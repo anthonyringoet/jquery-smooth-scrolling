@@ -29,7 +29,7 @@ $('html').smoothScroll({
 });
 ```
 
-I forked this repo. The original plugin was made by –[Mathias](http://mathiasbynens.be/)_
+I forked this repo. The original plugin was made by [Mathias](http://mathiasbynens.be/).
 
 ## Caveats
 Doesn't work when scrolling to `name` attributes.
