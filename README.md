@@ -32,4 +32,5 @@ $('html').smoothScroll({
 I forked this repo. The original plugin was made by [Mathias](http://mathiasbynens.be/).
 
 ## Caveats
-Doesn't work when scrolling to `name` attributes.
+- Doesn't work when scrolling to `name` attributes.
+- Use `body` as main element in selector on which you call `smoothScroll()` because Chrome has issues when you use `html`.
