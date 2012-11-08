@@ -1,4 +1,4 @@
-/*! http://mths.be/smoothscroll v1.5.2 by @mathias */
+/*! forked version of http://mths.be/smoothscroll */
 ;(function(document, $) {
 
 	var $scrollElement = (function() {

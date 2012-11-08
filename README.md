@@ -1,4 +1,5 @@
 # Smooth Scrolling jQuery Plugin
+Can be used with fixed header.
 
 ## Example Usage
 
@@ -28,4 +29,7 @@ $('html').smoothScroll({
 });
 ```
 
-original plugin by _–[Mathias](http://mathiasbynens.be/)_
+I forked this repo. The original plugin was made by –[Mathias](http://mathiasbynens.be/)_
+
+## Caveats
+Doesn't work when scrolling to `name` attributes.
